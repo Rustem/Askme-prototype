@@ -1,6 +1,10 @@
 /* Foundation v2.1.5 http://foundation.zurb.com */
 /* Artfully masterminded by ZURB  */
 
+* {
+	position: relative;
+}
+
 body {
 	cursor: default;
 }
@@ -144,4 +148,31 @@ table tbody tr td {
 	background-color: #eaeaea;
 	border-top: 1px dotted #333;
 	padding: 0 0.5em;
+}
+
+.t-accordion-container {
+	background-color: #fafafa;
+	padding: 0.5em 1em 0.5em 1em;
+	min-height: 27em;
+}
+
+.t-accordion-container__heading {
+	border-top: 1px dotted #eaeaea;
+	margin-bottom: 0.5em;
+	padding: 0.5em 0;
+}
+
+.t-accordion-container__heading a {
+	display: block;
+}
+
+.t-accordion-container__input-text {
+	width: 100% !important;
+}
+
+.t-accordion-container__select {
+	width: 100%;
+	font-size: 16px;
+	top: 3px;
+	margin-bottom: 1em;
 }

@@ -49,7 +49,7 @@
 				<nav class="twelve columns">
 					<ul class="nav-bar">
 						<li><a class="main" href="project.html">Назад</a></li>
-						<li><a class="main" href="all projects.html#projects">Проекты</a></li>
+						<li><a class="main" href="all%20projects.html#projects">Проекты</a></li>
 						<li class="has-flyout">
 							<a href="#" class="main">Тарифные планы</a>
 							<a href="#" class="flyout-toggle"><span></span></a>
@@ -137,9 +137,9 @@
 					</li>
 					<li id="simple2Tab">
 					
-						<div class="">
-							<h3>Выберите шаблон</h3>
-						</div>
+						
+						<h3>Выберите шаблон</h3>
+						
 						
 						<hr />
 						
@@ -374,99 +374,110 @@
 						<hr />
 						<h3>Personal branding</h3>
 						<div class="row">
-							<div class="four columns">
-								<hr />
+							<form class="four columns nice">
 								<h5>Шрифты</h5>
-								<h6>Заголовки</h6>
-								<form action="" class="nice">
-									<div class="appearance-settings-preview">
-										<h5>Предпросмотр шрифта в две строки</h5>
-									</div>
-									<div class="row">
-										<div class="four columns">
-											<label for="quest-appearance-color">Цвет</label>
-											<select name="quest-appearance-color" id="quest-appearance-color">
-												<option value="">Красный</option>
-												<option value="">Черный</option>
-												<option value="">Зеленый</option>
-											</select>
-											<label for="quest-appearance-highlight">Фон</label>
-											<select name="" id="quest-appearance-highlight">
-												<option value="">Красный</option>
-												<option value="">Черный</option>
-												<option value="">Зеленый</option>
-											</select>
-										</div>
-										<div class="eight columns">
-											<label for="quest-appearance-font">Шрифт</label>
-											<select name="quest-appearance-font" id="quest-appearance-font">
-												<option value="">Georgia</option>
-												<option value="">Helvetica</option>
-												<option value="">Gotham</option>
-											</select>
-											<div class="row">
-												<div class="six columns">
-													<label for="quest-appearance-size">Размер</label>
-													<select name="quest-appearance-size" id="quest-appearance-size">
-														<option value="">23</option>
-														<option value="">24</option>
-														<option value="">25</option>
-													</select>
-													<label for="quest-appearance-justification">Выравнивание</label>
-													<a href="#" id="quest-appearance-justification" class="white small button" style="margin: 0;">L|M|R</a>
-												</div>
-												<div class="six columns">
-													<label for="quest-appearance-size">Строка</label>
-													<select name="quest-appearance-size" id="quest-appearance-size">
-														<option value="">1</option>
-														<option value="">2</option>
-														<option value="">3</option>
-													</select>
-													<label for="quest-appearance-styles">Стили</label>
-													<a href="#" id="quest-appearance-styles" class="white small button" style="margin: 0;">U</a>
+								<dl class="accordion t-accordion-container">
+									<dt class="t-accordion-container__heading"><a href="" style="font: bold 23px/1em 'Georgia'; background-color: #eaeaea; color: #444;">Заголовки</a></dt>
+									<dd class="t-accordion-container__body">
+										<div class="row">
+											<div class="four columns">
+												<label for="quest-appearance-color">Цвет</label>
+												<input type="text" name="quest-appearance-color" id="quest-appearance-color" class="input-text t-accordion-container__input-text" placeholder="#444444"/>
+											</div>
+											<div class="eight columns">
+												<div class="row">
+													<div class="eight columns">
+														<label for="quest-appearance-font">Шрифт</label>
+														<select name="quest-appearance-font" id="quest-appearance-font" class="t-accordion-container__select">
+															<option value="">Georgia</option>
+															<option value="">Helvetica</option>
+															<option value="">Gotham</option>
+														</select>
+													</div>
+													<div class="four columns">
+														<label for="quest-appearance-size">Размер</label>
+														<select name="quest-appearance-size" id="quest-appearance-size" class="t-accordion-container__select">
+															<option value="">23</option>
+															<option value="">24</option>
+															<option value="">25</option>
+														</select>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</form>
-								<h6><a href="#">Подзаголовки</a></h6>
-								<h6><a href="#">Основной текст</a></h6>
-								<h6><a href="#">Сопроводительный текст</a></h6>
-								<h6><a href="#">Ссылки</a></h6>
+										
+										<div class="row">
+											<div class="four columns">
+												<label for="quest-appearance-question-bg">Фон</label>
+												<input type="text" name="quest-appearance-question-bg" id="quest-appearance-question-bg" class="input-text t-accordion-container__input-text" placeholder="#444444"/>
+											</div>
+											<div class="eight columns">
+												<div class="row">
+													<div class="eight columns">
+														<div>Стиль</div>
+														<a href="#" id="quest-appearance-justification" class="white small button" style="margin: 0 10% 0 0; width: 50%; padding: 0.9em 0; float: left;">L|M|R</a>
+														<a href="#" id="quest-appearance-txtdecor" class="white small button" style="margin: 0; width: 40%; padding: 0.9em 0; float: left; text-decoration: underline;">U</a>
+													</div>
+													<div class="four columns">
+														<label for="quest-appearance-lineheight">Строка</label>
+														<select name="quest-appearance-lineheight" id="quest-appearance-lineheight" class="t-accordion-container__select">
+															<option value="">1</option>
+															<option value="">2</option>
+															<option value="">3</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</dd>
+									<dt class="t-accordion-container__heading">
+										<a href="#" style="font: bold 14px/2em 'Georgia'; color: #444; font-style: italic; color: red;">Подзаголовки</a>
+									</dt>
+									<dd class="t-accordion-container__body">
+										<div style="height: 10em; background-color: #eaeaea;">Здесь будет форма</div>
+									</dd>
+									
+									<dt class="t-accordion-container__heading">
+										<a href="#" style="font: normal 12px/1.5em 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; color: #444;">Основной текст</a>
+									</dt>
+									<dd class="t-accordion-container__body">
+										<div style="height: 10em; background-color: #eaeaea;">Здесь будет форма</div>
+									</dd>
+									
+									<dt class="t-accordion-container__heading">
+										<a href="#" style="font: italic 10px/1.5em 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif; color: gray;">Пояснительный текст</a>
+									</dt>
+									<dd class="t-accordion-container__body">
+										<div style="height: 10em; background-color: #eaeaea;">Здесь будет форма</div>
+									</dd>
+									
+									<dt class="t-accordion-container__heading">
+										<a href="" style="text-decoration: underline;">Ссылки</a>
+									</dt>
+									<dd class="t-accordion-container__body">
+										<div style="height: 10em; background-color: #eaeaea;">Здесь будет форма</div>
+									</dd>
+								</dl>
 								<hr />
 								<h5>Фон</h5>
-								<h6>Цвета</h6>
-								<form class="row">
+								<div class="row">
 									<div class="six columns">
-										<label for="quest-appearance-body-bg">Контейнер</label>
-										<select name="quest-appearance-body-bg" id="quest-appearance-body-bg">
-											<option value="">Красный</option>
-											<option value="">Черный</option>
-											<option value="">Зеленый</option>
-										</select>
+										<label for="quest-appearance-background">Фон опроса</label>
+										<input type="text" class="input-text" id="quest-appearance-background" style="width: 100%;" />
 									</div>
 									<div class="six columns">
-										<label for="quest-appearance-question-bg">Вопрос</label>
-										<select name="quest-appearance-question-bg" id="quest-appearance-question-bg">
-											<option value="">Красный</option>
-											<option value="">Черный</option>
-											<option value="">Зеленый</option>
-										</select>
+										<label for="quest-appearance-foreground">Фон вопроса</label>
+										<input type="text" class="input-text" id="quest-appearance-foreground" style="width: 100%;" />
 									</div>
-								</form>
-								<h6>Картинка</h6>
-								<a href="#" class="radius button">Загрузить</a>
+								</div>
+								<h5>Фоновое изображение</h5>
+								<div style="text-align: center;"><a href="#" class="white radius button">Загрузить</a></div>
 								<hr />
-								<h5>Header</h5>
-								<hr />
-								<h5>Footer</h5>
-								<hr />
-							</div>
+								<a href="#" class="nice radius button">Сохранить как новый стиль</a>
+							</form>
 							<div class="eight columns">
 								Тут находится предпросмотр.
 							</div>
-						</div>
-						
 						<hr />
 						<div class="row">
 							<div class="four columns">
@@ -479,6 +490,7 @@
 								<a href="#" class="small white radius button">К публикации&nbsp;<i class="icon">▶</i></a>
 							</div>
 						</div>
+					</div>
 					</li>
 					<li id="simple4Tab">
 						<div class="row">
@@ -557,7 +569,7 @@
 						</div>
 						<p>Остальные руководства можно посмотреть <a href="#">здесь</a>.</p>
 					</div>
-					
+				</div>	
 			</section>
 		
 		<footer>
