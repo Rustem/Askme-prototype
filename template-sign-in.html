@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Survey&nbsp;&mdash;&nbsp;sign in template</title>
+  
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/font-awesome.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- container -->
+	<div class="container">
+		<div class="row">
+			<div class="six columns">
+				<h4>Empty Sign in</h4>
+				<form class="t-sign-in-box t-form nice">
+					<div class="t-sign-in-box__heading">
+						<div class="row">
+							<div class="six columns"><h5>Вход</h5></div>
+							<div class="six columns" style="text-align:right;"><i class="icon-lock"></i></div>
+						</div>
+					</div>
+					<div class="t-sign-in-box__body">
+						<label class="t-form__input-label" for="ex1">E-mail:</label>
+						<input id="ex1" name="ex1" type="text" class="input-text" />
+						<label class="t-form__input-label" for="ex2">Пароль:</label>
+						<input id="ex2" name="ex2" type="text" class="input-text inline" />
+						<a href="#">Забыли пароль?</a>
+						<label for="ex3"><input type="checkbox" name="ex3" id="ex3" />Запомнить меня</label>
+					</div>
+					<div class="t-sign-in-box__footer"></div>
+				</form>
+			</div>
+			<div class="six columns">
+				
+			</div>
+		</div>
+	</div>	
+	<!-- container -->
+
+
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/reveal.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script src="javascripts/prefixfree.min.js"></script>
+</body>
+</html>

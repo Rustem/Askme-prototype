@@ -14,6 +14,71 @@ body {
 	font-size: 1.25em;
 }
 
+/* TYPOGRAPHY fixes */
+/* remove half-leading: */
+sup, sub {
+	line-height: 0;
+}
+
+
+/*
+*	TYPOGRAPHY
+*	Standard typographic scale:
+*	6 7 8 9 10 11 12 14 16 18 21 24 36 48 60 72
+*	Line-height is a multiplication of 6
+*	
+*/
+
+.type__extra-large-heading {
+	/* 48/54, leading 6 */
+	font-size:48px;
+	font-size:4.8rem;
+	line-height: 1.125;
+}
+
+.type__large-heading {
+	/* 36/42, leading 6 */
+	font-size:36px;
+	font-size:3.6rem;
+	line-height: 1.17; /* 42px */
+}
+
+.type__normal-heading {
+	/* 24/30, leading 6 */
+	font-size:24px;
+	font-size:2.4rem;
+	line-height: 1.25; /* 30px */
+}
+
+.type__large {
+	/* 18/24, leading 6 */
+	font-size:18px;
+	font-size:1.8rem;
+	line-height: 1.3333333333; /* 24px */
+}
+
+.type__normal {
+	/* 16/24, leading 8 */
+	font-size:16px;
+	font-size:1.6rem;
+	line-height: 1.5; /* 24px */
+}
+
+.type__small {
+	/* 14/18, leading 4 */
+	font-size:14px;
+	font-size:1.4rem;
+	line-height: 1.29; /* 18px */
+}
+
+.type__caption {
+	/* 12/18, leading 6 */
+	font-size:12px;
+	font-size:1.2rem;
+	line-height: 1.5; /* 18px */
+}
+
+
 /* @group Project list */
 
 .project-list {
@@ -211,8 +276,24 @@ table tbody tr td {
 	min-width: 0;
 }
 
-.inline {
-	display: inline !important;
+.t-form__input-text, .t-form textarea {
+	border: solid 1px #bbb; 
+	border-radius: 2px;
+	font-size: 13px;
+	padding: 6px 3px 4px;
+	outline: none;
+	background: url(../images/misc/input-bg.png) #fff;
+	min-width: 25em;
+	max-width: 33em;
+}
+
+.t-form__input-text {
+	display: inline;
+}
+.t-form__input-text:before {
+	content:"";
+	display:block;
+	overflow:hidden;
 }
 
 .t-form__input-label {
@@ -223,4 +304,13 @@ table tbody tr td {
 	color: #7a8186;
 	font-style: italic;
 	font-weight: normal;
+}
+
+.t-sign-in-box {
+	background-color: #e6e7e9;
+	padding: 1em;
+}
+
+.t-sign-in-box__heading {
+	padding-bottom: 1em;
 }

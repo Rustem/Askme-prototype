@@ -26,7 +26,7 @@
       closed: $.noop
     };
     options = $.extend({}, defaults, options);
-
+	
     return this.each(function () {
       var modal    = $(this),
         topMeasure = parseInt(modal.css('top'), 10),
