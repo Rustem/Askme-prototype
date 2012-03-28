@@ -14,8 +14,14 @@
 	<title>Survey&nbsp;&mdash;&nbsp;главная</title>
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/foundation.css">
-	<link rel="stylesheet" href="stylesheets/app.css">
+	<link rel="stylesheet" href="stylesheets/font-awesome.css" />
+	<link rel="stylesheet" href="stylesheets/forms.css" />
+	<link rel="stylesheet" href="stylesheets/globals.css" />
+	<link rel="stylesheet" href="stylesheets/grid.css" />
+	<link rel="stylesheet" href="stylesheets/reveal.css" />
+	<link rel="stylesheet" href="stylesheets/typography.css" />
+	<link rel="stylesheet" href="stylesheets/ui.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
 
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="stylesheets/ie.css">
@@ -54,20 +60,21 @@
 							<div class="flyout medium">
 								<ul>
 									<li>
-										<h5><a href="#">Instant</a></h5>
-										<p style="margin-bottom: 6px;">$19.99 за опрос</p>
+										<a class="f-size__large" href="#">Instant</a>
+										<p class="f-size__small">$19.99 за опрос</p>
 										<hr/>
 									</li>
 									<li>
-										<div class="panel" style="padding: 12px;">
-											<h5><a href="#">Regular</a> (наиболее популярный)</h5>
-											<p>$299 в год или $18 в месяц</p>
+										<div class="panel" style="padding-top:12px;">
+											<a class="f-size__large" href="#">Regular</a>
+											<em class="f-size__caption">Самый популярный тариф!</em>
+											<p class="f-size__small">$299 в год или $18 в месяц</p>
 										</div>
 										<hr/>
 									</li>
 									<li>
-										<h5><a href="#">Professional</a></h5>
-										<p style="margin-bottom: 6px;">$500 в год</p>
+										<a class="f-size__large" href="#">Professional</a>
+										<p class="f-size__small">$500 в год</p>
 										<hr/>
 									</li>
 								</ul>
@@ -82,24 +89,22 @@
 			</div>
 		</header>
 		
-		<div class="row">
-			<div class="six columns">
-				<img style="background-color: #eaeaea; width: 100%; height: 300px; margin-bottom: 12px;" />
+		<div class="row" style="background-color:#eaeaea; height:300px; margin-bottom: 12px;">
+			<div class="seven columns push-four">
+				<h2 class="f-size__extra-large-heading">Мы знаем о Ваших клиентах всё!</h2>
+				<p class="readable">AskMe предоставляет возможность создавать опросы, делиться ими в социальных сетях и интегрировать сервисы, которыми Вы пользуетесь. Кроме того, у нас понятные отчеты!</p>
 			</div>
-			<div class="six columns">
-				<h1>Маркетинговый анализ&nbsp;&mdash; просто и удобно!</h1>
-				<p>AskMe предоставляет возможность создавать опросы, делиться ими в социальных сетях и интегрировать сервисы, которыми Вы пользуетесь. Кроме того, у нас понятные отчеты!</p>
-				<p><a href="#" class="nice radius large blue button">Бесплатная подписка</a></p>
-				<p><a href="#">Посмотрите что думают наши клиенты</a></p>
-			</div>
-			
+		</div>
+		<div class="row" style="text-align:center;">
+			<p><a href="#" class="nice radius large blue button">Бесплатная подписка</a></p>
+			<p class="f-size__small"><a href="#">Посмотрите что думают наши клиенты</a></p>
 		</div>
 		
 		<hr />
 		
 		<div class="row">
 			<div class="twelve columns">
-				<h3>Посмотрите как работает AskMe</h3>
+				<h2>Как это работает?</h2>
 				<div class="row">
 					<div class="six columns">
 						<img  alt="Video-player" style="width: 480px; height: 300px; background-color: #000; color: #fff;" />
@@ -113,7 +118,7 @@
 						
 						<p>Остальные руководства можно посмотреть <a href="#">здесь</a>.</p>
 						<hr />
-						<h4>Учебные материалы offline:</h4>
+						<h3>Учебные материалы offline:</h3>
 						<div class="row">
 							<div class="three columns">
 								<img style="width: 100%; height: 120px; background-color: #000; color: #fff;" alt="book-1"/>
@@ -140,33 +145,33 @@
 		
 		<div class="row">
 			<div class="twelve columns">
-				<h3>Новые статьи</h3>
+				<h2>Новые статьи</h2>
 				<div class="row">
 					<div class="four columns">
 						<img alt="News-pic" style="background-color: #eaeaea; width: 100%; height: 180px;" />
 						<hgroup style="height: 96px;">
-							<h4><small>История клиента:</small></h4>
-							<h4>Deloitte goes supernatural</h4>
+							<h3 class="f-size__large">Deloitte goes supernatural</h3>
+							<h4 class="f-size__small">История клиента</h4>
 						</hgroup>
-						<div style="height: 96px;"><p>View reports, add new subscribers and manage your lists with MailChimp's iPhone and Android apps.</p></div>
+						<div style="height: 96px;" class="f-size__small"><p>View reports, add new subscribers and manage your lists with MailChimp's iPhone and Android apps.</p></div>
 						<p><a class="small radius white button" href="#" style="width: 80%;">Читать дальше &rarr;</a></p>
 					</div>
 					<div class="four columns">
 						<img alt="News-pic" style="background-color: #eaeaea; width: 100%; height: 180px;" />
 						<hgroup style="height: 96px;">
-							<h4><small>Как это делают профессионалы:</small></h4>
-							<h4>Professional marketeers doing crazy things</h4>
+							<h3 class="f-size__large">Professional marketeers doing crazy things</h3>
+							<h4 class="f-size__small">Как это делают профессионалы</h4>
 						</hgroup>
-						<div style="height: 96px;"><p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam.</p></div>
+						<div style="height: 96px;" class="f-size__small"><p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam.</p></div>
 						<p><a class="small radius white button" href="#" style="width: 80%;">Читать дальше &rarr;</a></p>
 					</div>
 					<div class="four columns">
 						<img alt="News-pic" style="background-color: #eaeaea; width: 100%; height: 180px;" />
 						<hgroup style="height: 96px;">
-							<h4><small>История клиента:</small></h4>
-							<h4>Frequency does matter!</h4>
+							<h3 class="f-size__large">Frequency does matter!</h3>
+							<h4 class="f-size__small">История клиента</h4>
 						</hgroup>
-						<div style="height: 96px;"><p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p></div>
+						<div style="height: 96px;" class="f-size__small"><p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p></div>
 						<p><a class="small radius white button" href="#" style="width: 80%;">Читать дальше &rarr;</a></p>
 					</div>
 				</div>
