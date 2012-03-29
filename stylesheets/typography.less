@@ -1,43 +1,124 @@
-/*
-*	TYPOGRAPHY
-*	Standard typographic scale:
-*	6 7 8 9 10 11 12 14 16 18 21 24 36 48 60 72
-*	Line-height is a multiplication of 6
-*	
-*/
+// TYPOGRAPHY
 
-body {
+// Font sizes
 	
+// Standard typographic scale:
+// 6 7 8 9 10 11 12 14 16 18 21 24 36 48 60 72
+// Line-height is a multiplication of 6	
+
+.f-size__extra-large-heading {
+	.font-size(48px, 4.8rem);
+	line-height: @baseline*9;
+}
+.f-size__large-heading {
+	.font-size(36px, 3.6rem);
+	line-height: @baseline*8;
+}
+.f-size__normal-heading {
+	.font-size(24px, 2.4rem);
+	line-height: @baseline*5;
+}
+.f-size__large {
+	.font-size(18px, 1.8rem);
+	line-height: @baseline*4;
+}
+.f-size__normal {
+	.font-size(16px, 1.6rem);
+	line-height: @baseline*4;
+}
+.f-size__small {
+	.font-size(14px, 1.4rem);
+	line-height: @baseline*3;
+}
+.f-size__caption {
+	.font-size(12px, 1.2rem);
+	line-height: @baseline*3;
 }
 
-.type__xl-heading {
-	
+// Headings
+h1, h2, h3, h4, h5, h6 {
+	font-family: @heading-ff;
+	font-weight: bold;
 }
 
-.type__section-heading {
-	
+h1, h2 {
+	.f-size__large-heading;
+	padding-top:	@baseline*2;
+	padding-bottom:	@baseline;
+}
+h3, h4, h5, h6 {
+	.f-size__normal-heading;
+	padding-top:	@baseline;
+	padding-bottom:	@baseline;
+}
+h5, h6 {
+	.f-size__large;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	font: inherit;
 }
 
-.type__heading-1 {
-	
+// Paragraphs:
+p {
+	font-size:		inherit;
+	line-height:	inherit;
+	padding-bottom: @baseline*3;
+	img {
+		margin:		0;
+		padding:	0;
+		line-height:0;
+	}
+}
+p.f-size__large, p.f-size__normal, .f-size__large p, .f-size__normal p {
+	padding-bottom: @baseline*3;
+}
+p.f-size__small, p.f-size__caption, .f-size__small p, .f-size__caption p {
+	padding-bottom: @baseline*2;
 }
 
-.type__heading-2 {
-	
+sup, sub {
+	.f-size__caption;
+	line-height:0; // to remove leading shift, http://www.slideshare.net/maxdesign/line-height
 }
-
-.type__large_text {
-	
+blockquote {
+	color:			@text-color-light;
+	border-left:	1px solid @bg-color-dark;
+	margin:			@baseline 0 @baseline*2 @baseline*4;
+	padding:		@baseline*2 0 0 @baseline*3;
+	cite {
+		.f-size__caption;
+		display:	block;
+		color:		@text-color-dark;
+		padding-bottom:6px;
+	}
+	cite:before {
+		content:"\2014 \0020";
+	}
 }
-
-.type__normal {
-	
+hr {
+	border:			solid @bg-color-dark;
+	border-width:	1px 0 0;
+	clear:			both;
+	margin:			@baseline*2 0 @baseline*2-1;
+	height:			0;
 }
-
-.type__small {
-	
+em, i {
+	font-style:		italic;
+	line-height:	inherit;
 }
-
-.type__caption {
-	
+strong, b {
+	font-weight:	bold;
+	line-height:	inherit;
+}
+code, kbd, samp, pre, tt, var {
+	font-family:		mono-space, monospace;
+	background-color:	@bg-color-dark;
+	cursor: 			auto;
+}
+abbr, acronym {
+	text-transform:	uppercase;
+	text-transform:	none;
+	color:			@text-color-light;
+	cursor:			help;
+	border-bottom:	1px dashed @bg-color-dark;
 }

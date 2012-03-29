@@ -145,7 +145,7 @@ hr {
 	border: solid #ddd;
 	border-width: 1px 0 0;
 	clear: both; 
-	margin: 12px 0 17px; 
+	margin: 12px 0 11px; 
 	height: 0;
 }
 
@@ -178,4 +178,12 @@ abbr { text-transform: none; }
 	/* http://www.maxdesign.com.au/articles/em/ */
 	min-width:25em;
 	max-width:33em;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
 }

@@ -14,14 +14,13 @@
 	<title>Survey&nbsp;&mdash;&nbsp;главная</title>
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/font-awesome.css" />
 	<link rel="stylesheet" href="stylesheets/forms.css" />
 	<link rel="stylesheet" href="stylesheets/globals.css" />
 	<link rel="stylesheet" href="stylesheets/grid.css" />
 	<link rel="stylesheet" href="stylesheets/reveal.css" />
-	<link rel="stylesheet" href="stylesheets/typography.css" />
-	<link rel="stylesheet" href="stylesheets/ui.css" />
+	<link rel="stylesheet/less" type="text/css" href="stylesheets/merge.less">
 	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+		<link rel="stylesheet" href="stylesheets/font-awesome.css" />
 
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="stylesheets/ie.css">
@@ -43,10 +42,9 @@
 				<div class="three columns">
 					<h1>Ask Me</h1>
 				</div>
-				<div class="four columns offset-by-five" style="margin-top: 18px;">
-					<p style="margin-bottom: 6px; text-align: right;"><a href="all projects.html" class="nice radius small blue button">Войти</a></p>
+				<div class="four columns offset-by-five text-right" style="padding-top: 24px;">
+					<a href="all projects.html" class="nice f-size__caption button">Войти</a>
 				</div>
-				
 			</div>
 			<hr />
 		
@@ -67,7 +65,7 @@
 									<li>
 										<div class="panel" style="padding-top:12px;">
 											<a class="f-size__large" href="#">Regular</a>
-											<em class="f-size__caption">Самый популярный тариф!</em>
+											<em class="f-size__caption">(cамый популярный тариф)</em>
 											<p class="f-size__small">$299 в год или $18 в месяц</p>
 										</div>
 										<hr/>
@@ -95,9 +93,9 @@
 				<p class="readable">AskMe предоставляет возможность создавать опросы, делиться ими в социальных сетях и интегрировать сервисы, которыми Вы пользуетесь. Кроме того, у нас понятные отчеты!</p>
 			</div>
 		</div>
-		<div class="row" style="text-align:center;">
-			<p><a href="#" class="nice radius large blue button">Бесплатная подписка</a></p>
-			<p class="f-size__small"><a href="#">Посмотрите что думают наши клиенты</a></p>
+		<div class="row text-centered">
+			<p class="f-size__caption"><a href="#" class="nice f-size__large button">Бесплатная подписка</a></p>
+			<p class="f-size__caption"><a href="#">Посмотрите что думают наши клиенты</a></p>
 		</div>
 		
 		<hr />
@@ -111,12 +109,18 @@
 					</div>
 					<div class="six columns">
 						<ul>
-							<li><a href="#" class="small radius black button" style="width: 80%; text-align: left;">&larr; Как создать опрос?</a></li>
-							<li><a href="#" class="small radius white button" style="width: 80%; text-align: left;">&larr; Руководство дизайнера</a></li>
-							<li><a href="#" class="small radius white button" style="width: 80%; text-align: left;">&larr; Измерение результатов опроса</a></li>
+							<li class="highlight">
+								<a href="#"><i class="icon-arrow-left"></i> Как создать опрос?</a>
+							</li>
+							<li>
+								<a href="#"><i class="icon-arrow-left"></i> Руководство дизайнера</a>
+							</li>
+							<li>
+								<a href="#"><i class="icon-arrow-left"></i> Измерение результатов опроса</a>
+							</li>
 						</ul>
 						
-						<p>Остальные руководства можно посмотреть <a href="#">здесь</a>.</p>
+						<p class="f-size__caption">Остальные руководства можно посмотреть <a href="#">здесь</a>.</p>
 						<hr />
 						<h3>Учебные материалы offline:</h3>
 						<div class="row">
@@ -154,7 +158,7 @@
 							<h4 class="f-size__small">История клиента</h4>
 						</hgroup>
 						<div style="height: 96px;" class="f-size__small"><p>View reports, add new subscribers and manage your lists with MailChimp's iPhone and Android apps.</p></div>
-						<p><a class="small radius white button" href="#" style="width: 80%;">Читать дальше &rarr;</a></p>
+						<p><a class="button f-size__caption full-width" href="#">Читать дальше <i class="icon-arrow-right"></i></a></p>
 					</div>
 					<div class="four columns">
 						<img alt="News-pic" style="background-color: #eaeaea; width: 100%; height: 180px;" />
@@ -163,7 +167,7 @@
 							<h4 class="f-size__small">Как это делают профессионалы</h4>
 						</hgroup>
 						<div style="height: 96px;" class="f-size__small"><p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam.</p></div>
-						<p><a class="small radius white button" href="#" style="width: 80%;">Читать дальше &rarr;</a></p>
+						<p><a class="small white button" href="#" style="width: 80%;">Читать дальше &rarr;</a></p>
 					</div>
 					<div class="four columns">
 						<img alt="News-pic" style="background-color: #eaeaea; width: 100%; height: 180px;" />
@@ -172,7 +176,7 @@
 							<h4 class="f-size__small">История клиента</h4>
 						</hgroup>
 						<div style="height: 96px;" class="f-size__small"><p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p></div>
-						<p><a class="small radius white button" href="#" style="width: 80%;">Читать дальше &rarr;</a></p>
+						<p><a class="small white button" href="#" style="width: 80%;">Читать дальше &rarr;</a></p>
 					</div>
 				</div>
 			</div>
@@ -184,7 +188,7 @@
 				<div class="row">
 					<div class="six columns"><h3>Абсолютно бесплатный аккаунт!</h3></div>
 					<div class="six columns">
-						<p><a href="#" class="nice radius large button" style="margin-top: 18px;">Регистрация</a></p>
+						<p><a href="#" class="nice large button" style="margin-top: 18px;">Регистрация</a></p>
 					</div>
 				</div>
 				<p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
@@ -196,7 +200,7 @@
 			</div>
 		</div>
 
-		<footer>
+		<footer class="f-size__small">
 			<hr style="margin-top: 60px;"/>
 			<!--<div class="row">
 				<div class="twelve columns">
@@ -259,10 +263,12 @@
 
 
 	<!-- Included JS Files -->
+	<script src="javascripts/less-1-1.3.0.min.js"></script>
 	<script src="javascripts/jquery.min.js"></script>
 	<script src="javascripts/modernizr.foundation.js"></script>
 	<script src="javascripts/foundation.js"></script>
 	<script src="javascripts/app.js"></script>
+	
 
 </body>
 </html>

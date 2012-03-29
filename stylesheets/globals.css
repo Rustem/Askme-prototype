@@ -151,7 +151,7 @@ table tbody tr td { color: #333; padding: 9px 10px; vertical-align: top; border:
 .text-right  { text-align: right; }
 .text-center { text-align: center; }
 .hide        { display: none; }
-.highlight   { background: #ff0; }
+/*.highlight   { background: #ff0; }*/
 
 #googlemap img, object, embed { max-width: none; }
 

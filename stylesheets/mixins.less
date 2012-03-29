@@ -1,0 +1,74 @@
+// UTILITIES
+.font-size(@size-px: 16px, @size-rem: 1.6rem) {
+	font-size: @size-px;
+	font-size: @size-rem;
+}
+
+// CSS3 PROPERTIES
+// Border Radius
+.border-radius(@radius: 3px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// Drop shadows
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+      -ms-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+// Gradients
+#gradient {
+	.vertical(@startColor: @dark-blue, @endColor: @blue) {
+		background-color: mix(@startColor, @endColor, 60%);
+		background-image: -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+		background-image: -ms-linear-gradient(top, @startColor, @endColor); // IE10
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+		background-image: -webkit-linear-gradient(top, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+		background-image: -o-linear-gradient(top, @startColor, @endColor); // Opera 11.10
+		background-image: linear-gradient(top, @startColor, @endColor); // The standard
+		background-repeat: repeat-x;
+		filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down
+	}
+}
+
+
+// REMOVE THIS LATER !!!
+.grid-overlay {
+	height:100%;
+	width:100%;
+	z-index:999;
+	opacity:0.25;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.grid-overlay--6 {
+	background-image: url(../images/grid-6.png);
+}
+.grid-overlay--18 {
+	background-image: url(../images/grid-18.png);
+}
+.grid-overlay--24 {
+	background-image: url(../images/grid-24.png);
+} 
+.grid-overlay--30 {
+	background-image: url(../images/grid-30.png);
+}
+.grid-overlay--42{
+	background-image: url(../images/grid-42.png);
+}
+.grid-overlay--54 {
+	background-image: url(../images/grid-54.png);
+}

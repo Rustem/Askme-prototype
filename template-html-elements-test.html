@@ -11,14 +11,14 @@
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 
-	<title>Survey&nbsp;&mdash;&nbsp;text styles</title>
+	<title>Survey&nbsp;&mdash;&nbsp;HTML elements testing page</title>
   
 	<!-- Included CSS Files -->
 	<link rel="stylesheet" href="stylesheets/globals.css">
 	<link rel="stylesheet" href="stylesheets/grid.css">
-	<link rel="stylesheet" href="stylesheets/typography.css">
-	<link rel="stylesheet" href="stylesheets/ui.css">
+	<link rel="stylesheet/less" type="text/css" href="stylesheets/merge.less">
 	<link rel="stylesheet" href="stylesheets/forms.css">
+	
 
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="stylesheets/ie.css">
@@ -68,10 +68,7 @@
 			<h2>Basic block level elements</h2>
 
 			<p>This is a normal paragraph (<code>p</code> element).
-			To add some length to it, let us mention that this page was
-			primarily written for testing the effect of <strong>user style sheets</strong>.
-			You can use it for various other purposes as well, like just checking how
-			your browser displays various HTML elements.</p> 
+			To add some length to it, let us mention that this page was primarily written for testing the effect of <strong>user style sheets</strong>. You can use it for various other purposes as well, like just checking how your browser displays various <abbr title="Hyper Text Markup Language">HTML</abbr> elements.</p> 
 			<div class="row">
 				<div class="four columns f-size__large"><p><em>This is&nbsp;another paragraph. I&nbsp;think it&nbsp;needs to&nbsp;be&nbsp;added that the set of&nbsp;elements tested is&nbsp;not exhaustive in&nbsp;any sense. I&nbsp;have selected those elements for which it&nbsp;can make sense to&nbsp;write user style sheet rules, in&nbsp;my&nbsp;opionion.</em></p></div>
 				<div class="four columns pale"><p><em>This is&nbsp;another paragraph. I&nbsp;think it&nbsp;needs to&nbsp;be&nbsp;added that the set of&nbsp;elements tested is&nbsp;not exhaustive in&nbsp;any sense. I&nbsp;have selected those elements for which it&nbsp;can make sense to&nbsp;write user style sheet rules, in&nbsp;my&nbsp;opionion.</em></p></div>
@@ -239,8 +236,13 @@
 			This is a form containing various fields (with some initial
 			values (defaults) set, so that you can see how input text looks
 			like without actually typing it):</div>
-			<div><label for="but">Button:
-			<button id="but" type="submit" name="foo" value="bar">A cool<br>button</button></label></div>
+			<div>
+				Buttons:
+				<button class="button">Normal button</button>
+				<button class="button disabled">Normal button disabled</button>
+				<button class="nice button">Important button</button>
+				<button class="nice button disabled">Important button disabled</button>
+			</div>
 			<div><label for="f0">Reset button:
 			<input id="f0" type="reset" name="reset" value="Reset"></label></div>
 			<div><label for="f1">Single-line text input field: <input id="f1" name="text" size="20" value="Default text."></label></div>
@@ -307,5 +309,6 @@
 		</div>
 	</div>
 </div>
+<script src="javascripts/less-1-1.3.0.min.js"></script>
 </body>
 </html>
