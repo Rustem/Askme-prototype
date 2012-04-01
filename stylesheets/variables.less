@@ -1,30 +1,117 @@
 // VARIABLES
-// ---------
 
-@heading-ff:	"Lucida Grande", Lucida, Verdana, sans-serif;
-@body-ff:		"Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+@heading-ff   :	"Lucida Grande", Lucida, Verdana, sans-serif;
+@body-ff      :	"Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-// Colors:
-@text-color: 	#444444;
-@link-color:	#2a85e8;
-@bg-color:		#f6f6f6;
-@white:			#ffffff;
+// Grays
+@black        :	#000;
+@gray-darker  :	lighten(@black, 10%);
+@gray-dark    :	lighten(@black, 20%);
+@gray         :	lighten(@black, 50%);
+@gray-light   :	lighten(@black, 90%);
+@gray-lighter :	lighten(@black, 95%);
+@white        :	#fff;
 
-@text-color-light:	lighten(@text-color, 25%);
-@link-color-light:	lighten(@link-color, 10%);
-@bg-color-light:	lighten(@bg-color, 10%);
+// Accent colors
+@blue-dark    :	#0072c9;
+@blue         :	mix(@blue-dark, @blue-light, 20%);
+@blue-light   :	#1aaffc;
+@red-dark     :	#bc0300;
+@red          :	mix(@red-dark, @red-light, 20%);
+@red-light    :	#f43d31;
+@green-dark   : #008b00;
+@green        : mix(@green-dark, @green-light, 20%);
+@green-light  :	#1dc543;
+@yellow       :	#fff14c;
+@orange-dark  :	#fc6500;
+@orange       :	mix(@orange-dark, @orange-light, 20%);
+@orange-light :	#ffa264;
+@bluish       :	#3394d8;
+@bluish-light :	#7fcaff;
 
-@text-color-dark:	darken(@text-color, 10%);
-@link-color-dark:	darken(@link-color, 10%);
-@bg-color-dark:		darken(@bg-color, 15%);
+// Colors
+@text-dark    :	@gray-darker;
+@text         :	#444444;
+@text-light   :	@gray;
+@text-lighter : lighten(@text-light, 5%);
+@link         :	#2a85e8;
+@link-hover   :	#11639d;
+@bg-dark      :	@gray-light;
+@bg           :	#fbfcfe;
 
-// Gradient colors:
-@dark-blue:		#1aaffc;
-@blue:			#00a6fc;
-@light-blue:	#0072c9;
+@action-list-a-hover : @gray-lighter;
 
-@dark-gray:		#e6e6e6;
-@light-gray:	#cccccc;
+// Buttons
+@btn-flat         : @gray-light;
+@btn-hover        : lighten(@btn-flat, 2%);
+@btn-border       : darken(@gray-light, 10%);
+@btn-blue         : @blue;
+@btn-blue-hover   : @blue-light;
+@btn-red          : @red;
+@btn-red-hover    : @red-light;
+@btn-green        : @green;
+@btn-green-hover  : @green-light;
+@btn-black        :	@gray-dark;
+@btn-black-hover  : lighten(@gray-dark, 4%);
+@btn-black-border : @gray-darker;
+@btn-orange       : @orange;
+@btn-orange-hover : @orange-light;
 
-// Typography:
+// Nice gradients
+.white-gradient {
+	#gradient.vertical(@white, @gray-lighter);
+	border-color:@gray-lighter ;
+}
+.gray-gradient {
+	#gradient.vertical(@gray-light, @btn-border);
+	border-color: @btn-border;
+}
+.blue-gradient {
+	#gradient.vertical(@blue-light, @blue-dark);
+	border-color: @blue-dark;
+}
+.red-gradient {
+	#gradient.vertical(@red-light, @red-dark);
+	border-color: @red-dark;
+}
+.green-gradient {
+	#gradient.vertical(@green-light, @green-dark);
+	border-color: @green-dark;
+}
+.black-gradient {
+	#gradient.vertical(@gray-dark, @gray-darker);
+	border-color: @gray-darker;
+}
+.orange-gradient {
+	#gradient.vertical(@orange-light, @orange-dark);
+	border-color: @orange-dark;
+}
+.bluish-gradient {
+	#gradient.vertical(@bluish, @bluish-light);
+	border-color: @bluish;	
+}
+// Nice buttons hovers
+.white-gradient-hover {
+	#gradient.vertical(@white, lighten(@gray-lighter, 2%));
+}
+.gray-gradient-hover {
+	#gradient.vertical(lighten(@gray-light, 2%), lighten(@btn-border, 2%));
+}
+.blue-gradient-hover {
+	#gradient.vertical(lighten(@blue-light, 2%), lighten(@blue-dark, 2%));
+}
+.red-gradient-hover {
+	#gradient.vertical(lighten(@red-light, 2%), lighten(@red-dark, 2%));
+}
+.green-gradient-hover {
+	#gradient.vertical(lighten(@green-light, 2%), lighten(@green-dark, 2%));
+}
+.black-gradient-hover {
+	#gradient.vertical(lighten(@gray-dark, 2%), lighten(@gray-darker, 2%));
+}
+.orange-gradient-hover {
+	#gradient.vertical(lighten(@orange-light, 2%), lighten(@orange-dark, 2%));
+}
+
+// Typography
 @baseline: 6px;

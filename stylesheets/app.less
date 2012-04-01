@@ -1,0 +1,162 @@
+// Action-list
+ul.t-action-list {
+	li {
+		border       :	solid @bg-dark;
+		border-width :	0 0 1px;
+		padding: 0;
+	}
+	.t-action-list__act, .t-action-list__act--active {
+		padding-left: @baseline*2;
+		padding-top: @baseline;
+		padding-bottom: @baseline - 1;
+	}
+	.t-action-list__act--active {
+		background-color: @action-list-a-hover;
+	}
+	.t-action-list__act:hover {
+		background-color: @action-list-a-hover;
+		.transition(background-color .1s ease-in-out);
+	}
+
+}
+
+#main-nav {
+	.f-size__normal;
+	.white-gradient;
+	h1.logotype, ul.nav {
+		a {
+			color : @text;
+		}
+	}
+	h1.logotype {
+		padding       : 0;
+		display       : block;
+		float         : left;
+		.f-size__large;
+		line-height   : @baseline*8;
+		padding-right : @baseline*4;
+		border-right  : 1px solid @gray-lighter;
+	}
+	ul.nav {
+		padding-bottom : 0;
+		display        : block;
+		overflow       : hidden;
+		li {
+			padding-bottom : 0;
+			display        : block;
+			float          : left;
+			>a {
+				border-right : 1px solid @gray-lighter;
+				line-height  : @baseline*8;
+				display      : block;
+				padding      : 0 @baseline*3;
+				&:hover {
+					.white-gradient-hover;
+				}
+			}
+		}
+	}
+	.sign-in {
+		padding-top : @baseline*1.5;
+		>p {
+			padding : 0px;
+		}
+	}
+}
+
+.t-book-preview {
+	.f-size__small;
+	.t-book-preview__img {
+		display          : block;
+		color            : @white;
+		background-color : @gray-dark;
+		height           : @baseline*20;
+		width            : @baseline*15;
+	}
+}
+
+
+.t-video {
+	width            : 512px;
+	height           : 288px;
+	margin           : auto;
+	background-color : @gray-darker;
+}
+.t-video-bg {
+	background-color : @gray-dark;
+	padding-top      : @baseline*2;
+	padding-bottom   : @baseline*4;
+}
+
+.t-news-highlights {
+ 	.t-news-highlights__img {
+		color            : @white;
+		background-color : @gray-dark;
+		width            : 100%;
+		min-height       : @baseline*30;
+ 	}
+ 	.t-news-highlights__headline {
+		height : @baseline*4*4; // four normal lines
+		a {
+			color: inherit;
+		}
+ 	}
+}
+
+section {
+	border-top: 1px solid @white;
+	border-bottom: 1px solid @bg-dark;
+	padding-bottom : @baseline*4-2;
+}
+
+.t-promo {
+	padding-top      : @baseline*7;
+	.bluish-gradient;
+	.t-promo__container {
+		color      : @white;
+		min-height : @baseline*4*10; // ten normal lines
+	}
+	.t-promo__heading {
+		color        : @white;
+		text-shadow  :	0 -1px 1px rgba(0,0,0,0.15);
+		.f-size__extra-large-heading;
+	}
+	.t-promo__caption {
+		.f-size__small;
+		a {
+			color           : inherit;
+			text-decoration : underline;
+			&:hover {
+				color: inherit;
+				text-decoration : none;
+			}
+		}
+	}
+}
+
+.t-how-does-it-work {
+	
+}
+
+.t-news-section {
+	background-color : @gray-lighter;
+}
+
+.t-last-chance {
+	background-color : @gray-light;	
+}
+
+footer {
+	padding-top: @baseline*4;
+	padding-bottom: @baseline*4*4;
+	color: @white;
+	background-color: @gray-dark;
+	a {
+		color           : @gray;
+		text-decoration : underline;
+		&:hover {
+			color: inherit;
+			text-decoration : none;
+		}
+	}
+}

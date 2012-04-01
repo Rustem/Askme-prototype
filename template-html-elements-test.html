@@ -14,7 +14,6 @@
 	<title>Survey&nbsp;&mdash;&nbsp;HTML elements testing page</title>
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/globals.css">
 	<link rel="stylesheet" href="stylesheets/grid.css">
 	<link rel="stylesheet/less" type="text/css" href="stylesheets/merge.less">
 	<link rel="stylesheet" href="stylesheets/forms.css">
@@ -66,9 +65,7 @@
 			</div>
 			<hr/>
 			<h2>Basic block level elements</h2>
-
-			<p>This is a normal paragraph (<code>p</code> element).
-			To add some length to it, let us mention that this page was primarily written for testing the effect of <strong>user style sheets</strong>. You can use it for various other purposes as well, like just checking how your browser displays various <abbr title="Hyper Text Markup Language">HTML</abbr> elements.</p> 
+			<p>This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of <strong>user style sheets</strong>. You can use it for various other purposes as well, like just checking how your browser displays various <abbr title="Hyper Text Markup Language">HTML</abbr> elements.</p> 
 			<div class="row">
 				<div class="four columns f-size__large"><p><em>This is&nbsp;another paragraph. I&nbsp;think it&nbsp;needs to&nbsp;be&nbsp;added that the set of&nbsp;elements tested is&nbsp;not exhaustive in&nbsp;any sense. I&nbsp;have selected those elements for which it&nbsp;can make sense to&nbsp;write user style sheet rules, in&nbsp;my&nbsp;opionion.</em></p></div>
 				<div class="four columns pale"><p><em>This is&nbsp;another paragraph. I&nbsp;think it&nbsp;needs to&nbsp;be&nbsp;added that the set of&nbsp;elements tested is&nbsp;not exhaustive in&nbsp;any sense. I&nbsp;have selected those elements for which it&nbsp;can make sense to&nbsp;write user style sheet rules, in&nbsp;my&nbsp;opionion.</em></p></div>
@@ -229,6 +226,38 @@
 			<cite><a href="links.html">Links Want To Be Links</a></cite>.</p>
 
 			<h2>Forms</h2>
+
+			<h3>Flat buttons, no sizing:</h3>
+			<p>
+				<a href="#" class="button">Normal button</a>
+				<a href="#" class="blue button">Blue button</a>
+				<a href="#" class="red button">Red button</a>
+				<a href="#" class="green button">Green button</a>
+				<a href="#" class="black button">Black button</a>
+			</p>
+			<h3>Disabled buttons</h3>
+			<p>
+				<a href="#" class="button disabled">Normal button</a>
+				<a href="#" class="blue button disabled">Blue button</a>
+				<a href="#" class="red button disabled">Red button</a>
+				<a href="#" class="green button disabled">Green button</a>
+				<a href="#" class="black button disabled">Black button</a>
+			</p>
+			<h3>Buttons sizing:</h3>
+			<p>
+				<a href="#" class="f-size__large button">Large</a>
+				<a href="#" class="f-size__normal button">Normal</a>
+				<a href="#" class="f-size__small button">Small</a>
+				<a href="#" class="f-size__caption button">Caption</a>
+			</p>
+			<h3>Nice buttons:</h3>
+			<p>
+				<a href="#" class="nice button">Normal button</a>
+				<a href="#" class="nice blue button">Blue button</a>
+				<a href="#" class="nice red button">Red button</a>
+				<a href="#" class="nice green button">Green button</a>
+				<a href="#" class="nice black button">Black button</a>
+			</p>
 
 			<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
 			<div>

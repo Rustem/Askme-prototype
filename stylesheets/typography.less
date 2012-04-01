@@ -1,3 +1,13 @@
+body {
+	background-color: @bg;
+	color                  : @text;
+	cursor                 : default;
+	.f-size__normal;
+	position               : relative;
+	-webkit-font-smoothing : antialiased;
+	font-family            : "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
 // TYPOGRAPHY
 
 // Font sizes
@@ -43,13 +53,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
 	.f-size__large-heading;
-	padding-top:	@baseline*2;
-	padding-bottom:	@baseline;
+	padding-top    :	@baseline*2;
+	padding-bottom :	@baseline;
 }
 h3, h4, h5, h6 {
 	.f-size__normal-heading;
-	padding-top:	@baseline;
-	padding-bottom:	@baseline;
+	padding-top    :	@baseline;
+	padding-bottom :	@baseline;
 }
 h5, h6 {
 	.f-size__large;
@@ -60,13 +70,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 // Paragraphs:
 p {
-	font-size:		inherit;
-	line-height:	inherit;
-	padding-bottom: @baseline*3;
+	font-size       :	inherit;
+	line-height     :	inherit;
+	padding-bottom  :	@baseline*3;
 	img {
-		margin:		0;
-		padding:	0;
-		line-height:0;
+		margin      :	0;
+		padding     :	0;
+		line-height :	0;
 	}
 }
 p.f-size__large, p.f-size__normal, .f-size__large p, .f-size__normal p {
@@ -78,47 +88,89 @@ p.f-size__small, p.f-size__caption, .f-size__small p, .f-size__caption p {
 
 sup, sub {
 	.f-size__caption;
-	line-height:0; // to remove leading shift, http://www.slideshare.net/maxdesign/line-height
+	line-height :	0; // to remove leading shift, http://www.slideshare.net/maxdesign/line-height
 }
 blockquote {
-	color:			@text-color-light;
-	border-left:	1px solid @bg-color-dark;
-	margin:			@baseline 0 @baseline*2 @baseline*4;
-	padding:		@baseline*2 0 0 @baseline*3;
+	color       :	@text-light;
+	border-left :	1px solid @bg-dark;
+	margin      :	@baseline 0 @baseline*2 @baseline*4;
+	padding     :	@baseline*2 0 0 @baseline*3;
 	cite {
 		.f-size__caption;
-		display:	block;
-		color:		@text-color-dark;
-		padding-bottom:6px;
+		display        :	block;
+		color          :	@text-dark;
+		padding-bottom :	@baseline;
 	}
 	cite:before {
 		content:"\2014 \0020";
 	}
 }
 hr {
-	border:			solid @bg-color-dark;
-	border-width:	1px 0 0;
-	clear:			both;
-	margin:			@baseline*2 0 @baseline*2-1;
-	height:			0;
+	border       :	solid @bg-dark;
+	border-width :	1px 0 0;
+	clear        :	both;
+	margin       :	@baseline*2 0 @baseline*2-1;
+	height       :	0;
 }
 em, i {
-	font-style:		italic;
-	line-height:	inherit;
+	font-style  :	italic;
+	line-height :	inherit;
 }
 strong, b {
-	font-weight:	bold;
-	line-height:	inherit;
+	font-weight :	bold;
+	line-height :	inherit;
 }
 code, kbd, samp, pre, tt, var {
-	font-family:		mono-space, monospace;
-	background-color:	@bg-color-dark;
-	cursor: 			auto;
+	font-family      :	mono-space, monospace;
+	background-color :	@bg-dark;
+	cursor           : 	auto;
+	line-height      :	inherit;
 }
 abbr, acronym {
-	text-transform:	uppercase;
-	text-transform:	none;
-	color:			@text-color-light;
-	cursor:			help;
-	border-bottom:	1px dashed @bg-color-dark;
+	text-transform :	uppercase;	
+	color          :	@text-light;
+	cursor         :	help;
+	// browsers has very stranage behaviour with sizing of inline blocks
+	border-bottom  :	1px;
+	border-style   :	dotted;
+	
 }
+
+// Links
+a { 
+	color           : @link;
+	text-decoration : none;
+	line-height     : inherit;
+}
+a:hover {
+	color : @link-hover;
+}
+a:focus {
+	color   : #cc4714;
+	outline : none;
+}
+p a, p a:visited {
+	line-height : inherit;
+}
+
+// Lists
+ul, ol {
+	list-style-position : outside;
+	padding-bottom      : @baseline*3;
+	li {
+		padding-bottom  : @baseline;
+	}
+}
+ul {
+	list-style : none;
+}
+ol {
+	list-style : decimal;
+}
+ol, ul.square, ul.circle, ul.disc {
+	margin-left : @baseline*5;
+}
+ul.square { list-style : square; }
+ul.circle { list-style : circle; }
+ul.disc { list-style   : disc; }
+

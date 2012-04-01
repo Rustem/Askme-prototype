@@ -14,13 +14,11 @@
 	<title>Survey&nbsp;&mdash;&nbsp;главная</title>
   
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="stylesheets/forms.css" />
-	<link rel="stylesheet" href="stylesheets/globals.css" />
 	<link rel="stylesheet" href="stylesheets/grid.css" />
+	<link rel="stylesheet" href="stylesheets/forms.css" />
 	<link rel="stylesheet" href="stylesheets/reveal.css" />
 	<link rel="stylesheet/less" type="text/css" href="stylesheets/merge.less">
-	<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
-		<link rel="stylesheet" href="stylesheets/font-awesome.css" />
+	<link rel="stylesheet" href="stylesheets/font-awesome.css" />
 
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="stylesheets/ie.css">
@@ -35,173 +33,181 @@
 </head>
 <body>
 
-	<!-- container -->
-	<div class="container">
-		<header>
-			<div class="row" style="padding-top: 24px;">
-				<div class="three columns">
-					<h1>Ask Me</h1>
-				</div>
-				<div class="four columns offset-by-five text-right" style="padding-top: 24px;">
-					<a href="all projects.html" class="nice f-size__caption button">Войти</a>
-				</div>
-			</div>
-			<hr />
-		
+	<!-- Navigation -->
+	<nav id="main-nav">
+		<div class="container">
 			<div class="row">
-				<nav class="twelve columns">
-					<ul class="nav-bar">
-						<li><a class="main" href="#">Главная</a></li>
-						<li class="has-flyout">
-							<a href="#" class="main">Тарифные планы</a>
-							<a href="#" class="flyout-toggle"><span></span></a>
-							<div class="flyout medium">
-								<ul>
-									<li>
-										<a class="f-size__large" href="#">Instant</a>
-										<p class="f-size__small">$19.99 за опрос</p>
-										<hr/>
-									</li>
-									<li>
-										<div class="panel" style="padding-top:12px;">
-											<a class="f-size__large" href="#">Regular</a>
-											<em class="f-size__caption">(cамый популярный тариф)</em>
-											<p class="f-size__small">$299 в год или $18 в месяц</p>
-										</div>
-										<hr/>
-									</li>
-									<li>
-										<a class="f-size__large" href="#">Professional</a>
-										<p class="f-size__small">$500 в год</p>
-										<hr/>
-									</li>
-								</ul>
-							</div>
+				<div class="ten columns">
+					<h1 class="logotype"><a href="#">Ask Me</a></h1>
+					<ul class="nav">
+						<li>
+							<a href="#">Тарифные планы</a>
 						</li>
-						<li><a class="main" href="#">Учебные материалы</a></li>
-						<li><a class="main" href="#">Поддержка</a></li>
-						<li><a class="main" href="#">Блог</a></li>
-						<li></li>
+						<li>
+							<a href="#">Учебные материалы</a>
+						</li>
+						<li>
+							<a href="#">Поддержка</a>
+						</li>
+						<li>
+							<a href="#">Блог</a>
+						</li>
 					</ul>
-				</nav>
+				</div>
+				<div class="two columns sign-in">
+					<p class="f-size__caption text-right">
+						<a href="#" class="nice green button">Войти</a>
+					</p>			
+				</div>
+				
 			</div>
-		</header>
-		
-		<div class="row" style="background-color:#eaeaea; height:300px; margin-bottom: 12px;">
-			<div class="seven columns push-four">
-				<h2 class="f-size__extra-large-heading">Мы знаем о Ваших клиентах всё!</h2>
+			
+		</div>
+	</nav>
+
+	<!-- Promo-container -->
+	<section class="t-promo">
+		<div class="row t-promo__container">
+			<div class="six columns push-six">
+				<h2 class="t-promo__heading">Всё, что угодно!</h2>
 				<p class="readable">AskMe предоставляет возможность создавать опросы, делиться ими в социальных сетях и интегрировать сервисы, которыми Вы пользуетесь. Кроме того, у нас понятные отчеты!</p>
 			</div>
 		</div>
-		<div class="row text-centered">
-			<p class="f-size__caption"><a href="#" class="nice f-size__large button">Бесплатная подписка</a></p>
-			<p class="f-size__caption"><a href="#">Посмотрите что думают наши клиенты</a></p>
+		<div class="row text-centered t-promo__controls">
+			<p class="f-size__caption"><a href="#" class="f-size__large nice orange button">Бесплатная подписка</a></p>
+			<p class="t-promo__caption">Что-то важное, например <a href="#">отзывы клиентов</a>.</p>
 		</div>
-		
-		<hr />
-		
-		<div class="row">
+	</section>
+
+	<section class="t-how-does-it-work">
+		<div class="container">
+			<div class="row">
 			<div class="twelve columns">
 				<h2>Как это работает?</h2>
 				<div class="row">
-					<div class="six columns">
-						<img  alt="Video-player" style="width: 480px; height: 300px; background-color: #000; color: #fff;" />
-					</div>
-					<div class="six columns">
-						<ul>
-							<li class="highlight">
-								<a href="#"><i class="icon-arrow-left"></i> Как создать опрос?</a>
-							</li>
-							<li>
-								<a href="#"><i class="icon-arrow-left"></i> Руководство дизайнера</a>
-							</li>
-							<li>
-								<a href="#"><i class="icon-arrow-left"></i> Измерение результатов опроса</a>
-							</li>
-						</ul>
-						
-						<p class="f-size__caption">Остальные руководства можно посмотреть <a href="#">здесь</a>.</p>
-						<hr />
-						<h3>Учебные материалы offline:</h3>
-						<div class="row">
-							<div class="three columns">
-								<img style="width: 100%; height: 120px; background-color: #000; color: #fff;" alt="book-1"/>
-								<p>Book-1</p>
-							</div>
-							<div class="three columns">
-								<img style="width: 100%; height: 120px; background-color: #000; color: #fff;" alt="book-1"/>
-								<p>Book-1</p>
-							</div>
-							<div class="three columns">
-								<img style="width: 100%; height: 120px; background-color: #000; color: #fff;" alt="book-1"/>
-								<p>Book-1</p>
-							</div>
-							<div class="three columns">
-								<img style="width: 100%; height: 120px; background-color: #000; color: #fff;" alt="book-1"/>
-								<p>Book-1</p>
-							</div>
+					<div class="seven columns">
+						<div class="t-video-bg">
+							<div class="t-video"></div>
 						</div>
 					</div>
+					<div class="five columns">
+						<ul class="t-action-list">
+							<li class="t-action-list__act--active">
+								<i class="icon-arrow-left"></i> Как создать опрос?
+							</li>
+							<li>
+								<a href="#" class="block t-action-list__act"><i class="icon-arrow-left"></i> Руководство дизайнера</a>
+							</li>
+							<li>
+								<a href="#" class="block t-action-list__act"><i class="icon-arrow-left"></i> Измерение результатов опроса</a>
+							</li>
+						</ul>
+						<p class="f-size__caption">Остальные руководства можно посмотреть <a href="#">здесь</a>.</p>
+						<h3>Учебные материалы offline:</h3>
+						<ul class="row">
+							<li class="three columns t-book-preview">
+								<a href="#" class="block">
+									<img class="t-book-preview__img" alt="book-1"/>
+									<p>Book-1</p>	
+								</a>
+							</li>
+							<li class="three columns t-book-preview">
+								<a href="#" class="block">
+									<img class="t-book-preview__img" alt="book-1"/>
+									<p>Book-2</p>	
+								</a>
+							</li>
+							<li class="three columns t-book-preview">
+								<a href="#" class="block">
+									<img class="t-book-preview__img" alt="book-1"/>
+									<p>Book-3</p>	
+								</a>
+							</li>
+							<li class="three columns t-book-preview">
+								<a href="#" class="block">
+									<img class="t-book-preview__img" alt="book-1"/>
+									<p>Book-4</p>	
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<hr/>
 		</div>
-		
-		<div class="row">
-			<div class="twelve columns">
-				<h2>Новые статьи</h2>
-				<div class="row">
-					<div class="four columns">
-						<img alt="News-pic" style="background-color: #eaeaea; width: 100%; height: 180px;" />
-						<hgroup style="height: 96px;">
-							<h3 class="f-size__large">Deloitte goes supernatural</h3>
-							<h4 class="f-size__small">История клиента</h4>
-						</hgroup>
-						<div style="height: 96px;" class="f-size__small"><p>View reports, add new subscribers and manage your lists with MailChimp's iPhone and Android apps.</p></div>
-						<p><a class="button f-size__caption full-width" href="#">Читать дальше <i class="icon-arrow-right"></i></a></p>
-					</div>
-					<div class="four columns">
-						<img alt="News-pic" style="background-color: #eaeaea; width: 100%; height: 180px;" />
-						<hgroup style="height: 96px;">
-							<h3 class="f-size__large">Professional marketeers doing crazy things</h3>
-							<h4 class="f-size__small">Как это делают профессионалы</h4>
-						</hgroup>
-						<div style="height: 96px;" class="f-size__small"><p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam.</p></div>
-						<p><a class="small white button" href="#" style="width: 80%;">Читать дальше &rarr;</a></p>
-					</div>
-					<div class="four columns">
-						<img alt="News-pic" style="background-color: #eaeaea; width: 100%; height: 180px;" />
-						<hgroup style="height: 96px;">
-							<h3 class="f-size__large">Frequency does matter!</h3>
-							<h4 class="f-size__small">История клиента</h4>
-						</hgroup>
-						<div style="height: 96px;" class="f-size__small"><p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p></div>
-						<p><a class="small white button" href="#" style="width: 80%;">Читать дальше &rarr;</a></p>
-					</div>
-				</div>
-			</div>
-			<hr/>
 		</div>
-		
-		<div class="row">
-			<div class="six columns">
-				<div class="row">
-					<div class="six columns"><h3>Абсолютно бесплатный аккаунт!</h3></div>
-					<div class="six columns">
-						<p><a href="#" class="nice large button" style="margin-top: 18px;">Регистрация</a></p>
-					</div>
+	</section>
+
+	<section class="t-news-section">
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<h2>Новые статьи</h2>
+					<ul class="row">
+						<li class="four columns t-news-highlights">
+							<img src="" alt="Deloitte goes supernatural" class="t-news-highlights__img">
+							<hgroup class="t-news-highlights__headline">
+								<h3 class="f-size__large"><a href="#">Deloitte goes supernatural</a></h3>
+								<h4 class="f-size__small"><a href="#">История клиента</a></h4>
+							</hgroup>
+							<div class="t-news-highlights__body">
+								<p>View reports, add new subscribers and manage your lists with MailChimp's iPhone and Android apps.</p>
+								<p><a href="#">Читать дальше <i class="icon-arrow-right"></i></a></p>
+							</div>
+						</li>
+						<li class="four columns t-news-highlights">
+							<img src="" alt="Professional marketeers doing crazy things" class="t-news-highlights__img">
+							<hgroup class="t-news-highlights__headline">
+								<h3 class="f-size__large"><a href="#">Professional marketeers doing crazy things</a></h3>
+								<h4 class="f-size__small"><a href="#">Как это делают профессионалы?</a></h4>
+							</hgroup>
+							<div class="t-news-highlights__body">
+								<p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam.</p>
+								<p><a href="#">Читать дальше <i class="icon-arrow-right"></i></a></p>
+							</div>
+						</li>
+						<li class="four columns t-news-highlights">
+							<img src="" alt="Frequency does matter!" class="t-news-highlights__img">
+							<hgroup class="t-news-highlights__headline">
+								<h3 class="f-size__large"><a href="#">Frequency does matter!</a></h3>
+								<h4 class="f-size__small"><a href="#">История клиента</a></h4>
+							</hgroup>
+							<div class="t-news-highlights__body">
+								<p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+								<p><a href="#">Читать дальше <i class="icon-arrow-right"></i></a></p>
+							</div>
+						</li>
+					</ul>
 				</div>
-				<p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 			</div>
-			<div class="six columns">
-				<div class="panel"><h4>Follow us block</h4>
+		</div>
+	</section>
+
+	<section class="t-last-chance">
+		<div class="container">
+			<div class="row">
+				<div class="seven columns">
+					<div class="row">
+						<div class="eight columns">
+							<h2 class="f-size__normal-heading">Абсолютно бесплатный аккаунт!</h2>
+						</div>
+						<div class="four columns">
+							<p><a href="#" class="nice orange large button" style="margin-top: 18px;">Регистрация</a></p>
+						</div>
+					</div>
 					<p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 				</div>
+				<div class="five columns">
+					<div class="panel"><h4>Follow us block</h4>
+						<p>Aliquam vitae massa ligula, id sagittis nunc. Vivamus scelerisque lacus quis arcu luctus tristique. Cras vitae pretium diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+					</div>
+				</div>
 			</div>
 		</div>
+	</section>
 
-		<footer class="f-size__small">
-			<hr style="margin-top: 60px;"/>
+
+	<footer>
+		<div class="container f-size__small">
 			<!--<div class="row">
 				<div class="twelve columns">
 					<ul class="breadcrumbs">
@@ -212,52 +218,50 @@
 					</ul>
 				</div>
 			</div>-->
-			<div class="row" style="padding-bottom: 12px;">
-				<div class="three columns"><input style="width: 100%;" type="search" placeholder="Поиск"/></div>
+			<div class="row">
+				<div class="three columns"><input type="search" placeholder="Поиск"/></div>
 			</div>
 			<div class="row">
 				<div class="three columns">
-					<h5>About Us</h5>
+					<h2 class="f-size__normal">About Us</h2>
 					<ul>
-						<li style="margin-bottom: 0;"><a href="#">About Survey.kz</a></li>
-						<li style="margin-bottom: 0;"><a href="#">Jobs</a></li>
-						<li style="margin-bottom: 0;"><a href="#">Customer stories</a></li>
-						<li style="margin-bottom: 0;"><a href="#">Press resources</a></li>
-						<li style="margin-bottom: 0;"><a href="#">Press releases</a></li>
-						<li style="margin-bottom: 0;"><a href="#">Brand assets</a></li>
+						<li><a href="#">About Survey.kz</a></li>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Customer stories</a></li>
+						<li><a href="#">Press resources</a></li>
+						<li><a href="#">Press releases</a></li>
+						<li><a href="#">Brand assets</a></li>
 					</ul>
 				</div>
 				<div class="three columns">
-					<h5>Connect With Us</h5>
+					<h2 class="f-size__normal">Connect With Us</h2>
 					<ul>
-						<li style="margin-bottom: 0;"><a href="#">Integrations &amp; Plugins</a></li>
-						<li style="margin-bottom: 0;"><a href="#">Survey API</a></li>
+						<li><a href="#">Integrations &amp; Plugins</a></li>
+						<li><a href="#">Survey API</a></li>
 					</ul>
 				</div>
 				<div class="three columns">
-					<h5>Contact Us</h5>
+					<h2 class="f-size__normal">Contact Us</h2>
 					<ul>
-						<li style="margin-bottom: 0;"><a href="#">Contact Survey</a></li>
-						<li style="margin-bottom: 0;"><a href="#">Partner with us</a></li>
-						<li style="margin-bottom: 0;"><a href="#">Survey Status</a></li>
+						<li><a href="#">Contact Survey</a></li>
+						<li><a href="#">Partner with us</a></li>
+						<li><a href="#">Survey Status</a></li>
 					</ul>
 				</div>
 				<div class="three columns">
-					<h5>Legal Info</h5>
+					<h2 class="f-size__normal">Legal Info</h2>
 					<ul>
-						<li style="margin-bottom: 0;"><a href="#">Terms of Use</a></li>
-						<li style="margin-bottom: 0;"><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
 					</ul>
 				</div>
 			</div>
 			
-			<div class="row" style="text-align: center; margin-bottom: 120px; margin-top: 24px;">
-				(c) 2012 All Rights Reserved. Survey
+			<div class="row">
+				<p class="text-centered">(c) 2012 All Rights Reserved. Survey</p>
 			</div>
-		</footer>
-
-	</div>		
-	<!-- container -->
+		</div>
+	</footer>
 
 
 

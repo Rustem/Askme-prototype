@@ -1,126 +1,165 @@
-// Base
+// BASE, flat, no round corners
 .button {
-	border:			1px solid darken(@dark-gray, 20%);
-	color:			lighten(@text-color, 5%);
-	cursor:			pointer;
-	display: 		inline-block;
-	font-weight:	bold;
-	line-height: 	1;
-	margin:			0;
-	outline:		none;
-	padding:		@baseline*2-1 @baseline*6 @baseline*2-1; // remove 2px border from padding
-	position:		relative;
-	text-align: 	center;
-	text-decoration:none;
-	font-family:	@body-ff;
-	#gradient.vertical(@dark-gray, @light-gray);
-	.border-radius;
+	background-color : @btn-flat;
+	border           : 1px solid @btn-flat;
+	color            : @text-light;
+	cursor           : pointer;
+	display          : inline-block;
+	font-weight      : bold;
+	margin           : 0;
+	outline          : none;
+	padding          : (@baseline - 1) @baseline*6; // remove 2px border from padding
+	position         : relative;
+	text-align       : center;
+	text-decoration  : none;
+	font-family      : @body-ff;
+
+	// Sizes
+	&.f-size__large {
+		padding      : @baseline*2-1 @baseline*7;
+	}
+	&.f-size__small {
+		padding      : (@baseline - 1) @baseline*5;
+	}
+	&.f-size__caption {
+		padding      : @baseline/2-1 @baseline*4;	
+	}
+
+	// Other flat colors:
+	&.blue {
+		background-color : @btn-blue; 
+		color            : @white;
+		border-color     : @btn-blue;
+	}
+	&.red {
+		background-color : @btn-red;
+		color            : @white;
+		border-color     : @btn-red;
+	}
+	&.green {
+		background-color : @btn-green;
+		color            : @white;
+		border-color     : @btn-green;
+	}
+	&.black {
+		background-color : @btn-black;
+		color            : @white;
+		border-color     : @btn-black;
+	}
+	&.orange {
+		background-color : @btn-orange;
+		color            : @white;
+		border-color     : @btn-orange;
+	}
 }
+
+// Hovers for flat buttons
 .button:hover {
-	color:			lighten(@text-color, 10%);
-	#gradient.vertical(lighten(@dark-gray, 5%), lighten(@light-gray, 5%));
-}
-.button.disabled, .button.disabled:hover {
-	opacity:	0.6;
-	color:		@text-color-light;
-	#gradient.vertical(@dark-gray, @light-gray);
-}
-.button.full-width {
-	display:		block;
-	padding-left:	@baseline*2;
+	color                : @text-lighter;
+	background-color     : @btn-hover;
+	.transition(background-color .15s ease-in-out);
+	&.blue {
+		color            : @white;
+		background-color : @btn-blue-hover;
+	}
+	&.red {
+		color            : @white;
+		background-color : @btn-red-hover;
+	}
+	&.green {
+		color            : @white;
+		background-color : @btn-green-hover;
+	}
+	&.black {
+		color            : @white;
+		background-color : @btn-black-hover;
+	}
+	&.orange {
+		color            : @white;
+		background-color : @btn-orange-hover;
+	}
 }
 
-/* Don't use native buttons on iOS */
-input[type=submit].button, button.button { -webkit-appearance: none; }
 
-/* Hide inner focus effect in Firefox */
-button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
-	border: none;
-}
 
 // Nice buttons
-.button.nice, button.nice.disabled:hover {
-	border-color:	@dark-blue;
-	color:			@white;
-	text-shadow:	0 -1px 1px rgba(0,0,0,0.28);
-	#gradient.vertical(@dark-blue, @light-blue);
+.nice.button {
+	.gray-gradient;
 	.box-shadow(inset 0 1px 0 rgba(255,255,255,.5));
-	.transition(background-color .15s ease-in-out);
-}
-.button.nice:hover {
-	color: @white;
-	#gradient.vertical(lighten(@dark-blue, 5%), lighten(@light-blue, 5%));
-}
-
-// Sizes
-.button.f-size__large {
-	padding-left:	48px;
-	padding-right:	48px;
-}
-.button.f-size__normal {
-	padding: (@baseline - 1) @baseline*2;
-}
-.button.f-size__small {
-	padding: (@baseline - 1) @baseline*2;
-}
-
-.button.f-size__caption {
-	padding: (@baseline - 1) @baseline*2 (@baseline - 1);
-}
-
-		/*.tiny.button			{ font-size: 10px; padding: 6px 14px 8px; width: auto; }
-		.small.button 			{ font-size: 11px; padding: 8px 20px 10px; width: auto; }
-		.medium.button 			{ font-size: 13px; width: auto; }
-		.large.button 			{ font-size: 18px; padding: 11px 48px 13px; width: auto; }*/
-
-		/* Nice Sizes ---------- */
-		/*	.nice.tiny.button 		{ background-position: 0 -37px; }
-		.nice.small.button 		{ background-position: 0 -34px; }
-		.nice.large.button 		{ background-position: 0 -30px; }*/
-
-		/* Colors ---------- */
-		.blue.button			{ background-color: #00a6fc; }
-		.red.button				{ background-color: #e91c21; }
-		.white.button			{ background-color: #e9e9e9; color: #333; }
-		.black.button			{ background-color: #141414; }
-		.green.button			{ background-color: #5b8737; }
-
-		/* Nice Colors ---------- */
-		.nice.blue.button		{ border: 1px solid #0593dc; }
-		.nice.red.button		{ border: 1px solid #b90b0b; }
-		.nice.white.button		{ border: 1px solid #cacaca; text-shadow: none !important; }
-		.nice.black.button		{ border: 1px solid #000; }
-		.nice.green.button		{ border: 1px solid #4a6b2d; }
-
-		/* Hovers ---------- */
-
-		.blue.button:hover, .blue.button:focus		{ background-color: #0192dd; }
-		.red.button:hover, .red.button:focus 		{ background-color: #d01217; }
-		.white.button:hover, .white.button:focus	{ background-color: #dadada; color: #333; }
-		.black.button:hover, .black.button:focus	{ background-color: #000; }
-		.green.button:hover, .green.button:focus	{ background-color: #699c40; }	
-
-		/* Hovers ---------- */
-		.nice.button:active 	{ 
-			-moz-box-shadow: inset 0 1px 0 rgba(0,0,0,.15);
-			-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.15);
-			box-shadow: inset 0 1px 0 rgba(0,0,0,.15);
+	.border-radius;
+	&:active {
+		.box-shadow(inset 0 1px 0 rgba(0,0,0,.15));
+	}
+	&:hover {
+		.gray-gradient-hover;
+	}
+	&.blue {
+		text-shadow :	0 -1px 1px rgba(0,0,0,0.15);
+		.blue-gradient;
+		&:hover {
+			.blue-gradient-hover;
 		}
-
-		/* Disabled ---------- */
-		.button.disabled, .button[disabled] { opacity: 0.6; cursor: default; }
-		.button.disabled:hover, .button[disabled]:hover, .button.disabled:focus, .button[disabled]:focus {
-			/* no changes on hover or focus */
+	}
+	&.red {
+		text-shadow :	0 -1px 1px rgba(0,0,0,0.15);
+		.red-gradient;
+		&:hover {
+			.red-gradient-hover;
 		}
-
-		/* Correct FF button padding */
-		@-moz-document url-prefix("http://") {
-			input[type=submit].button::-moz-focus-inner, button.button::-moz-focus-inner { border: 0; padding: 0;}
-			input[type=submit].tiny.button		{ padding: 5px 14px 7px; }
-			input[type=submit].small.button		{ padding: 7px 20px 8px; }
-			input[type=submit].medium.button	{ padding: 8px 34px 9px; }
-			input[type=submit].large.button		{ padding: 9px 48px 10px; }
+	}
+	&.green {
+		text-shadow :	0 -1px 1px rgba(0,0,0,0.15);
+		.green-gradient;
+		&:hover {
+			.green-gradient-hover;
 		}
+	}
+	&.black {
+		text-shadow :	0 -1px 1px rgba(0,0,0,0.15);
+		.black-gradient;
+		&:hover {
+			.black-gradient-hover;
+		}
+	}
+	&.orange {
+		text-shadow :	0 -1px 1px rgba(0,0,0,0.15);
+		.orange-gradient;
+		&:hover {
+			.orange-gradient-hover;
+		}
+	}
+}
+
+// Disabled buttons
+.button.disabled, .button[disabled], .button.disabled:hover, .button[disabled]:hover, .button.disabled:focus, .button[disabled]:focus {
+	background-color :	lighten(@btn-flat, 5%);
+	color            :	darken(@btn-flat, 5%);
+	cursor           :	default;
+	border-color     :	@btn-flat;
+}
+
+
+// Fixes for buttons
+// Don't use native buttons on iOS
+input[type=submit].button, button.button { -webkit-appearance: none; }
+// Hide inner focus effect in Firefox
+button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+	border  :	none;
+}
+
+// Utilities for buttons
+.button.full-width {
+	display :	block;
+}
+
+/* Correct FF button padding 
+@-moz-document url-prefix("http://") {
+	input[type=submit].button::-moz-focus-inner, button.button::-moz-focus-inner { border: 0; padding: 0;}
+	input[type=submit].tiny.button		{ padding: 5px 14px 7px; }
+	input[type=submit].small.button		{ padding: 7px 20px 8px; }
+	input[type=submit].medium.button	{ padding: 8px 34px 9px; }
+	input[type=submit].large.button		{ padding: 9px 48px 10px; }
+}*/
 
 
 
@@ -243,10 +282,34 @@ div.panel {
 Nav Bar with Dropdowns
 -------------------------------------------------- */
 
-.nav-bar { height: 45px; background: #fff; margin-top: 20px; border: 1px solid #ddd; }	
-.nav-bar>li { float: left; display: block; position: relative; padding: 0; margin: 0; border-right: 1px solid #ddd; line-height: 45px; }
-.nav-bar>li>a.main { position: relative; padding: 0 20px; display: block; text-decoration: none; font-size: 15px; font-size: 1.5rem; }
-.nav-bar>li>input { margin: 0 16px; }
+// Navigation bar with dropdowns
+
+/*.nav-bar {
+	.f-size__small;
+	height     : @baseline*9-2;
+	background : @white;
+	margin-top : @baseline*3;
+	border     : 1px solid @bg-dark;
+	padding    : 0;
+	>li {
+		float        : left;
+		display      : block;
+		position     : relative;
+		padding      : 0;
+		margin       : 0;
+		border-right : 1px solid @bg-dark;
+		line-height  : @baseline*8;
+		>a.main {
+			position : relative;
+			padding  : 0 @baseline*3;
+			display  : block;
+		}
+		&.has-flyout {
+			display: none;
+		}
+	}
+}*/
+/*.nav-bar>li>input { margin: 0 16px; }
 .nav-bar>li ul { margin-bottom: 0; }
 .nav-bar>li li { line-height: 1.3; }
 .nav-bar>li.has-flyout>a.main { padding-right: 36px; }
@@ -257,7 +320,7 @@ Nav Bar with Dropdowns
 .flyout.large { width: 600px; }
 .flyout.right { left: auto; right: 0; }
 .flyout p:last-child { margin-bottom: 0; }
-.nav-bar>li .flyout { display: none; }
+.nav-bar>li .flyout { display: none; }*/
 
 /*	--------------------------------------------------
 Sub Navs
